@@ -3,7 +3,7 @@ Modeling the uncertainty in building round-the-clock product availability of sho
 
 Imagine you own a grocery store and you had to stock up on bread. Every day you have the option to send out an order by the afternoon to the vendor to replenish the stock the next day. Assume a shelf life of 2 days.
 
-3 major sources of uncertainty -
+**3 major sources of uncertainty -**
 
 Demand today(d_0) - This will allow us to predict the opening stock of the next day.
 Demand tomorrow(d_1) - This would determine the demand for tomorrow, and the number of excess units for the next day or lost opportunity of sales.
@@ -12,17 +12,18 @@ On some preliminary data analysis, you are able to fit your sales onto a normal 
 
 Therefore, this is how the problem would look on simplification.
 
-Objective Function - Minimize (Lost Opportunity+Disposal)
-Uncertainty Model - d_0,d_1,d_2 ~ N(mu = 60,sd = 14)
-Decision Variable - Assuming we start at a source of certainty of opening stock today of 70 units, how many units would you order for tomorrow?
-Few Simplifications -
+**Objective Function** - Minimize (Lost Opportunity+Disposal)
+**Uncertainty Model** - d_0,d_1,d_2 ~ N(mu = 60,sd = 14)
+**Decision Variable** - Assuming we start at a source of certainty of opening stock today of 70 units, how many units would you order for tomorrow?
+
+**Few Simplifications -**
 
 Let us assume the only values d_0,d_1,d_2 can take are - 10,20,30,40,50,60,70,80,90,100,110,120 (12 Cases in Total)
 d_0,d_1,d_2 are independant of each other
 The replenishment is always done at the beginning the demand cycle.
 In the code below I aim to do the following - Given 12 cases of sales we would have 12 x 12 x 12 = 1728 possibilities
 
-( Example -
+( **Example** -
 
 Case 1 - d_0 = 10 units, d_1 = 20 units and d_2 = 110 units Output_1 - disposal_1 = n1, loss_1 = m1
 Case 2 - d_0 = 100 units, d_1 = 80 units and d_2 = 60 units Output_2 - disposal_2 = n2, loss_2 = m2
