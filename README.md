@@ -10,6 +10,8 @@ Demand tomorrow(d_1) - This would determine the demand for tomorrow, and the num
 Demand day after(d_2) - To help us understand how many of the excess units we will be able to sell out. If demand for the next day is less than the number of excess units, it gets disposed of.
 On some preliminary data analysis, you are able to fit your sales onto a normal distribution with a mean of 60 units and a standard deviation of 14 units.
 
+**We can use a poisson distribution to model slow moving SKUs**
+
 Therefore, this is how the problem would look on simplification.
 
 **Objective Function** - Minimize (Lost Opportunity+Disposal)
