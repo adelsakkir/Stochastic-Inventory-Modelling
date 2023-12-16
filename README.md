@@ -25,10 +25,10 @@ In the code below I aim to do the following - Given 12 cases of sales we would h
 
 ( **Example** -
 
-Case 1 - d_0 = 10 units, d_1 = 20 units and d_2 = 110 units Output_1 - disposal_1 = n1, loss_1 = m1
-Case 2 - d_0 = 100 units, d_1 = 80 units and d_2 = 60 units Output_2 - disposal_2 = n2, loss_2 = m2
-......
-Case 1728 - d_0 = 90 units, d_1 = 10 units and d_2 = 80 units Output_1728 - disposal_1728 = n_1728, loss_1728 = m_1728)
+- Case 1 - d_0 = 10 units, d_1 = 20 units and d_2 = 110 units Output_1 - disposal_1 = n1, loss_1 = m1
+- Case 2 - d_0 = 100 units, d_1 = 80 units and d_2 = 60 units Output_2 - disposal_2 = n2, loss_2 = m2
+- ......
+- Case 1728 - d_0 = 90 units, d_1 = 10 units and d_2 = 80 units Output_1728 - disposal_1728 = n_1728, loss_1728 = m_1728)
 In each of the above cases we would observe n units of disposals, and m units of lost sales due to out of stock. These cases could happen with a certain probability.
 
 Expected_Outcome(opening_stock_today , final_order)
